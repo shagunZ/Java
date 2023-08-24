@@ -27,7 +27,7 @@ class Developer extends Person{
 
 
 class Person{
-    String name;
+    protected String name;   //children ko accessible ho baki kisi class ko ho na ho
     int age ;
     static int count ; //not a property of a object so using static and can be accessed using classname
     void color(int clr){
@@ -48,3 +48,7 @@ class Person{
         this.name=name;
     }
 }
+
+
+
+//protected:accessible to that class and its children.
