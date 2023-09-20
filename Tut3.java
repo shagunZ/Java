@@ -10,18 +10,29 @@ public class Tut3 {
         System.out.println("p2: "+p2.age+" "+p2.name);
 
         Developer d1 = new Developer(11,"developerS");
+        Developer d2= new Developer();
         d1.color(0);
         d1.color("darkmode");
     }
 }
 
 class Developer extends Person{
+ public Developer() {
+        super(); // Call the default constructor of the parent class
+        System.out.println("Developer default constructor is called");
+    }
     public Developer(int age,String name){
         super(age,name); //use to call parent constructor
+                System.out.println("r is called ");
+
     }
     //so color is a example of runtime polymorphism
     void color(String c){
         System.out.println("Devcolor: "+c);
+    }
+    void color(int c){
+        super.color(c);;
+        System.out.println("Devcolorthis is neewejfejiswjofs: "+c);
     }
 }
 
