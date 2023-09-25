@@ -13,7 +13,8 @@ public class Department {
         this.name = sc.nextLine();
                System.out.println("Enter the number of batches in this department");
                sizeofDepartment =sc.nextInt();
-               for(int i=0;i<this.sizeofDepartment;i++){
+               bt = new Batch[sizeofDepartment]; 
+               for(int i=0;i<sizeofDepartment;i++){
                 bt[i] = new Batch();
                 bt[i].inpBatchDetail(); 
                }

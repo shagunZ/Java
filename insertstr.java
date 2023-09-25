@@ -11,6 +11,7 @@ public class insertstr {
         String modifiedString = stringBuilder.toString();
         StringBuilder str = new StringBuilder("demostr");
         str.append("newdemo");
+        System.out.println(str);
         str.delete(2, 4);
         System.out.println(str);
 

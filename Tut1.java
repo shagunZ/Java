@@ -38,7 +38,6 @@ public class Tut1{
 
 
 
-
         //input
         // int marks[] = new int[5];
         // // int marks[] = {22,33,44,55,66};

@@ -1,4 +1,5 @@
 import java.util.Random;
+import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.lang.Math;
 
@@ -6,6 +7,9 @@ public class random {
     public static void main(String args[]){
         Random ran = new Random();
         int x = ran.nextInt(10);
+
+        double g = Math.random();
+        System.out.println("g"+g);
         // new Random().nextInt(5 + 1)  + 10 // [0...5]  + 10 = [10...15]
 int z = ran.nextInt((5-3)+1) +3 ;
 System.out.println(z);
@@ -27,6 +31,9 @@ System.out.println(z);
         //  System.out.println(b1);
         //  BigInteger b2 = BigInteger.valueOf(123456789);
         //  System.out.println(b2);
+         BigDecimal b1 = BigDecimal.valueOf(392849829.6545);
+         System.out.println(b1);
+
 
     }
 }

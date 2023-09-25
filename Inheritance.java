@@ -31,6 +31,10 @@ class Derived extends Base {
     Derived() {
         System.out.println("constructor of derived");
     }
+    Derived(int x) {
+                System.out.println("x=der " + x);
+
+    }
 }
 
 public class Inheritance {
@@ -42,6 +46,7 @@ public class Inheritance {
         Base b2 = new Base(9);
         System.out.println("//////////////////////////");
         Derived d = new Derived();
+        Derived dw = new Derived(4);
         d.setX(88);
         System.out.println(d.getX());
         d.display();
