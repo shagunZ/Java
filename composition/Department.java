@@ -1,6 +1,5 @@
-
 import java.util.*; 
-import composition.Batch; 
+simport composition.Batch; 
 
 public class Department {
     private String name;
