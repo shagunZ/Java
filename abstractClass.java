@@ -18,6 +18,7 @@ public class abstractClass extends demo{
     public static void main(String[] args) {
         // demo d= new demo(); //not allowed
         demo d =new abstractClass();
+        System.out.println(d.x);
         d.mee();
         d.mee1();
     }

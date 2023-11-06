@@ -5,10 +5,11 @@ interface A {
 interface B extends A{
     void m2();
 }
-interface C extends A,B{
+interface C extends B{
     void m3();
 }
 interface D{
+    int y = 4; 
     static void m4(){
         System.out.println("m4");
     }
@@ -17,7 +18,7 @@ interface D{
     }
 }
 
-//class interfaceclass implements A,B
+// public class interfaceclass implements A,B{
 public class interfaceclass implements C,D{
         public void m1(){
         System.out.println("m1");
@@ -36,6 +37,7 @@ System.out.println(a.x);
 System.out.println(A.x); //bcz static
         //static
         D.m4();
+        System.out.println(D.y);
         D d = new interfaceclass();
         d.m5();
     }
