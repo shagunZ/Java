@@ -11,9 +11,9 @@ public class InstancOf extends demo2{
         demo1 d1 = new demo1();
         InstancOf d4 = new InstancOf();
         
-        System.out.println(i instanceof InstancOf);
-        System.out.println(d2 instanceof demo2);
-        System.out.println(d1 instanceof InstancOf);
-        System.out.println(d4 instanceof demo1);
+        System.out.println(i instanceof InstancOf);  //true
+        System.out.println(d2 instanceof demo2);  //true
+        System.out.println(d1 instanceof InstancOf);  //false
+        System.out.println(d4 instanceof demo1);  //true
     }
 }
