@@ -29,8 +29,7 @@ public class linkedlist {
         ll.addLast("C");
         System.out.println(ll);
         Iterator<String> itr = ll.iterator();
-        while(itr.hasNext()){
-            System.out.println(itr.next());
+        while(itr.hasNext()){ 
         }
 
 
