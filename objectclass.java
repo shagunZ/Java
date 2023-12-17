@@ -22,9 +22,9 @@ public class objectclass {
     public static void main(String[] args) {
         objectclass student1=new objectclass("John",23);
         objectclass student2=new objectclass("Jane",45);
-        objectclass student3=new objectclass("Jane",45);
+        objectclass student3=new objectclass(" zane",45);
         System.out.println(student1.equals(student2)); //false because they have same roll no but different names
-        System.out.println(student2.equals(student3)); //false because they have same roll no but different names
+        System.out.println(student2.equals(student3)); //true
         // System.out.println(student2.toString());//Name: Jane
         // System.out.println(Objects.hash(student2));//-1139777280
         System.out.println(student1.toString());
