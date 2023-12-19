@@ -30,7 +30,7 @@ public class cloning implements Cloneable{
         System.out.println(s1.d.x);
         System.out.println(clone.d.x);
 
-        System.out.println(clone==s1);
+        System.out.println(clone.d==s1.d);
 
         }catch(CloneNotSupportedException e){
             System.out.println("err"+e);

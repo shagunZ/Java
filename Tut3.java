@@ -24,7 +24,6 @@ class Developer extends Person{
     public Developer(int age,String name){
         super(age,name); //use to call parent constructor
                 System.out.println("r is called ");
-
     }
     //so color is a example of runtime polymorphism
     void color(String c){

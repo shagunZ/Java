@@ -22,7 +22,7 @@ public class linkedlist {
         // System.out.println(queue.poll());
         // System.out.println(queue);
 
-
+ 
         LinkedList<String> ll = new LinkedList<>();
         ll.add("A");
         ll.addFirst("B");

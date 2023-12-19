@@ -3,6 +3,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.Comparator;
+import java.util.Iterator;
 
 public class arrayClass {
     public static void main(String[] args) {
@@ -35,5 +36,11 @@ public class arrayClass {
         
         Collections.sort(list,Comparator.reverseOrder());
         System.out.println(list);
+
+        Iterator itr = list.iterator();
+        while(itr.hasNext()){
+            System.out.println("a: "+itr.next());
+        }
+
     }
 }

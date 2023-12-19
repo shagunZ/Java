@@ -1,3 +1,5 @@
+import java.util.*;
+import java.lang.*;
 class Numbers11 implements Runnable
 {
     int mode;

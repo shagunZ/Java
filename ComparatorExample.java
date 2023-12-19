@@ -1,4 +1,7 @@
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.Collection;
 import java.util.Comparator;
 
 class Student {
@@ -24,26 +27,26 @@ class Student {
     }
 }
 
-public class ComparatorExample {
-    static class AgeComparator implements Comparator<Object> {
+public class ComparatorExample implements Comparator<Object> {
         @Override
         public int compare(Object obj1, Object obj2) {
-            if (obj1 instanceof Student && obj2 instanceof Student) {
                 Student student1 = (Student) obj1;
                 Student student2 = (Student) obj2;
                 // return Integer.compare(student1.getAge(), student2.getAge());
-                return student1.getAge() - student2.getAge();
-            }
-            return 0; // Default comparison for other types
+                return Integer.compare(student1.getAge(), student2.getAge());
         }
-    }
+    
 
     public static void main(String[] args) {
-        Student[] students = {
-                new Student("Alice", 25),
-                new Student("Bob", 30),
-                new Student("Charlie", 22)
-        };
+        Student student1 = new Student("Alice", 25);
+         Student student2 =   new Student("Bob", 30);
+            Student student3 =  new Student("Charlie", 22);
+
+        
+        ArrayList<Student> students = new ArrayList<>();
+    students.add(student1);
+    students.add(student2);
+    students.add(student3);
 
         System.out.println("Original order:");
         for (Student student : students) {
@@ -51,7 +54,7 @@ public class ComparatorExample {
         }
 
         // Use the AgeComparator (local class) to sort the array
-        Arrays.sort(students, new AgeComparator());
+        Collections.sort(students, new ComparatorExample());
 
         // Display the sorted order
         System.out.println("\nSorted order based on age:");
